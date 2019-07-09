@@ -1,0 +1,186 @@
+{
+  "appName": {
+    "message": "Lingocloud - Web Translation Extension",
+    "description": ""
+  },
+  "appNameAbbr": {
+    "message": "Lingocloud",
+    "description": ""
+  },
+  "appDesc": {
+    "message": "Enjoy Chinese-English web translation with one click by Lingocloud.",
+    "description": ""
+  },
+  "zh":{
+    "message": "Simplified Chinese",
+    "description": ""
+  },
+  "en": {
+    "message": "English",
+    "description": ""
+  },
+  "ja":{
+    "message": "Japanses",
+    "description": ""
+  },
+  "transZh2En": {
+    "message": "Chinese to English",
+    "description": ""
+  },
+  "transEn2Zh": {
+    "message": "English to Chinese",
+    "description": ""
+  },
+  "transJp2Zh": {
+    "message": "Japanese to Chinese",
+    "description": ""
+  },
+  "transZh2EnAbbr": {
+    "message": "zh-en",
+    "description": ""
+  },
+  "transEn2ZhAbbr": {
+    "message": "en-zh",
+    "description": ""
+  },
+  "transJp2ZhAbbr": {
+    "message": "ja-zh",
+    "description": ""
+  },
+  "showOrg": {
+    "message": "Original Language",
+    "description": ""
+  },
+  "showTgt": {
+    "message": "Target Language",
+    "description": ""
+  },
+  "showBil": {
+    "message": "Bilingual Subtitle",
+    "description": ""
+  },
+  "showOrgAbbr": {
+    "message": "Original",
+    "description": ""
+  },
+  "showTgtAbbr": {
+    "message": "Target",
+    "description": ""
+  },
+  "showBilAbbr": {
+    "message": "Bilingual",
+    "description": ""
+  },
+  "hideRwdBtn": {
+    "message": "Hide the menu",
+    "description": ""
+  },
+  "showRwdBtn": {
+    "message": "Show the menu",
+    "description": ""
+  },
+  "startVideoTransBtn": {
+    "message": "Play",
+    "description": ""
+  },
+  "stopVideoTransBtn": {
+    "message": "Stop",
+    "description": ""
+  },
+  "clickToStartTrans": {
+    "message": "Click 'Play' to enjoy bilingual subtitles of videos produced by LingoCloud AI",
+    "description": ""
+  },
+  "requestingAudioMsg": {
+    "message": "Trying to record the audio of the video by the mircrophone ...",
+    "description": ""
+  },
+  "closingAudioMsg": {
+    "message": "Turning off the audio recognization ...",
+    "description": ""
+  },
+  "openRecorder": {
+    "message": "Recognizing the audio of video, trying to create the WebSocket ...",
+    "description": ""
+  },
+  "openRecorderError": {
+    "message": "Failed to recognize the audio of video ... ",
+    "description": ""
+  },
+  "recording": {
+    "message": "Recognizing ...",
+    "description": ""
+  },
+  "closeRecorder": {
+    "message": "The microphone is turned off",
+    "description": ""
+  },
+  "videoTransTitle": {
+    "message": "Welcome to use LingoCloud!",
+    "description": ""
+  },
+  "videoTransDes1": {
+    "message": "Please choose the translation direction of video, or click 'Play directly'",
+    "description": ""
+  },
+  "videoTransDes2": {
+    "message": "If you choose the translation direction, LingoCloud will close other tabs' LingoCloud subtitle,<br>and focus on this tab to provide you the best translation",
+    "description": ""
+  },
+  "closeTrans": {
+    "message": "Play directly",
+    "description": ""
+  },
+  "minimizeTransTip": {
+    "message": "Double click the LingoCloud subtitle to minimize it",
+    "description": ""
+  },
+  "maximizeTransTip": {
+    "message": "Double click the LingoCloud subtitle to maximize it",
+    "description": ""
+  },
+  "wsIsOpen": {
+    "message": "The WebSocket is created",
+    "description": ""
+  },
+  "wsIsConnecting": {
+    "message": "The WebSocket is trying to connect the LingoCloud service ...",
+    "description": ""
+  },
+  "wsIsNotOpened": {
+    "message": "Error happened with creating WebSocket, please check your internet connection or contact us",
+    "description": ""
+  },
+  "wsError": {
+    "message": "Error happened with connecting to the LingoCloud service, please check your internet connection or contact us",
+    "description": ""
+  },
+  "VideoTransReqLogin": {
+    "message": "We recommend to log in LingoCloud and enjoy bilingual subtitles of videos produced by AI! If you just logged in, please reload the website and click the extension",
+    "description": ""
+  },
+  "searchingVideo": {
+    "message": "LingoCloud is searching for the video of this page ...",
+    "description": ""
+  },
+  "videoNotFound": {
+    "message": "Woops! LingoCloud can not find any translatable video, but it still tries to provide you subtitle.",
+    "description": ""
+  },
+  "videoBtnTitle": {
+    "message": "Video Translation (Beta)",
+    "description": ""
+  },
+  "videoAlertMuted": {
+    "message": "In order to recognize audio, please unmute the video",
+    "description": ""
+  },
+  "RequireAllowAccessFile": {
+    "message": "Please click 'Allow access to file URLs' of LingoCloud Interpreter at chrome://extensions, then LingoCloud can provide you translation for local video files",
+    "description": ""
+  },
+  "getCookieFailed": {
+    "message": "Failed to get cookie, please click the extension again and authorize LingoCloud to get the data",
+    "description": ""
+  }
+}
