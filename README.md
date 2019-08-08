@@ -6,6 +6,8 @@ No login, unlimited use, no pop-ups, no tracking (Google Analytics)
 
 Base [彩云小译](https://chrome.google.com/webstore/detail/lingocloud-web-translatio/jmpepeebcbihafjjadogphmbgiffiajh)
 
+[Learn more](https://tmr.js.org/p/3bd1bb4e/)
+
 # Install
 
 Download [the crx file](https://github.com/ttttmr/Caiyun/releases/download/0.0.23/caiyun.crx) to install
