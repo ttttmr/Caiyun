@@ -11,6 +11,10 @@
     "message": "彩雲小譯雙語對照網頁翻譯插件，一鍵高效獲取母語閱讀體驗。",
     "description": ""
   },
+  "launchApp": {
+     "message": "啟動彩雲小譯",
+     "description": ""
+  },
   "hideRwdBtn": {
     "message": "隱藏菜單欄",
     "description": ""
@@ -91,6 +95,10 @@
     "message": "點擊「開始」影片會開始播放並實時生成字幕喔！",
     "description": ""
   },
+  "requestReloadAndReload": {
+    "message": "為維護您的隱私權，「影片翻譯功能」需要請您點擊插件按鈕或右鍵選單中的「啟動彩雲小譯」，才能在偵測到影片的情況下，為您提供自動影片翻譯服務。",
+    "description": ""
+  },
   "requestingAudioMsg": {
     "message": "正在開啟聲音識別功能 ...",
     "description": ""
@@ -113,22 +121,6 @@
   },
   "closeRecorder": {
     "message": "已關閉",
-    "description": ""
-  },
-  "videoTransTitle": {
-    "message": "歡迎使用彩雲小譯！",
-    "description": ""
-  },
-  "videoTransDes1": {
-    "message": "請選擇影片的翻譯方向，或點選「關閉翻譯」直接播放。",
-    "description": ""
-  },
-  "videoTransDes2": {
-    "message": "若選擇翻譯方向，小譯會關閉其他頁面已開啟的小譯字幕，專心為當前頁面翻譯喔！",
-    "description": ""
-  },
-  "closeTrans": {
-    "message": "關閉翻譯",
     "description": ""
   },
   "minimizeTransTip": {
@@ -176,11 +168,75 @@
     "description": ""
   },
   "RequireAllowAccessFile": {
-    "message": "請在 chrome://extensions 彩雲小譯的「詳細資訊」中勾選「允許存取檔案網址」，小譯才能為您提供影片檔案翻譯服務喔>//<",
+    "message": "請在 chrome://extensions 彩雲小譯的「詳細資訊」中勾選「允許存取檔案網址」，小譯才能為您提供檔案翻譯服務喔>//<",
     "description": ""
   },
   "getCookieFailed": {
     "message": "糟糕！判斷登入失敗 >//<，請點擊插件，授權小譯訪問網站的數據",
+    "description": ""
+  },
+  "getCookiesPermissionFailed": {
+    "message": "無法訪問Cookie，您將無法登錄，請授權小譯可讀取和更改網站的數據",
+    "description": ""
+  },
+  "networkErr": {
+    "message": "誒呦喂~網絡請求出錯了～請檢查網絡連接喲～",
+    "description": ""
+  },
+  "swtErr": {
+    "message": "誒呦喂~劃詞翻譯功能運行出錯了～請刷新重試喲～",
+    "description": ""
+  },
+  "tooFreqentErr": {
+    "message": "誒呦喂~操作太頻繁啦～請稍後重試喲～",
+    "description": ""
+  },
+  "multiParagraghErr": {
+    "message": "誒呦喂~選中的段落太多啦～可以試試開啟整頁翻譯喲～",
+    "description": ""
+  },
+  "logInOut":{
+    "message": "用戶登入/登出",
+    "description": ""
+  },
+  "funcOnOff":{
+    "message": "開啟/關閉網頁翻譯",
+    "description": ""
+  },
+  "addFavorite":{
+    "message": "收藏此頁",
+    "description": ""
+  },
+  "videoTrans":{
+    "message": "視頻翻譯",
+    "description": ""
+  },
+  "showDirectly":{
+    "message": "直接顯示劃譯結果",
+    "description": ""
+  },
+  "optionsPage": {
+    "message": "選項頁",
+    "description": ""
+  },
+  "defaultAudioApi": {
+    "message": "語音朗讀默認工具",
+    "description": ""
+  },
+  "youdao": {
+    "message": "朗讀工具1",
+    "description": ""
+  },
+  "baidu": {
+    "message": "朗讀工具2",
+    "description": ""
+  },
+  "ctrlHint": {
+    "message": "點我展開/收起",
+    "description": ""
+  },
+  "readingSpeed": {
+    "message": "朗讀語速",
     "description": ""
   }
 }
