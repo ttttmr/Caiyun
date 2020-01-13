@@ -1,5 +1,5 @@
 .cyxy-trs-target#cyxy-swt {
-    background-color: white; 
+    background-color: white;
 }
 #cyxy-swt-pre {
     /* background-color: #5ebb8d; */
@@ -7,8 +7,8 @@
     max-width: 35px;
     background-color: transparent;
     min-width: 35px;
-    position: absolute; 
-    overflow: hidden; 
+    position: absolute;
+    overflow: hidden;
     z-index: 2147483647;
 }
 
@@ -37,7 +37,7 @@
 }
 
 #cyxy-swt .trs-header {
-    padding-bottom: 10.5px; 
+    padding-bottom: 10.5px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -196,13 +196,13 @@
 .cyxy-options-hint {
     bottom: 76px;
 }
- 
+
 .cyxy-personal-hint {
     bottom: 276px;
 }
 
 .cyxy-function-hint {
-    bottom: 226px;
+    bottom: 126px;
 }
 
 .cyxy-favorite-hint {
