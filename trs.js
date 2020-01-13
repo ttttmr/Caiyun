@@ -5179,15 +5179,7 @@
                 }), new Error("PageAuth Error", e);
                 var n, r, i = JSON.parse(t.data),
                     g = i.auth_type;
-                0 == i.rc ? g >= 0 && ("android" == H ? window.js.showSpendCMoney(y, "") : "ios" == H ? window.webkit.messageHandlers.showSpendCMoney.postMessage({
-                    title1: y,
-                    title2: ""
-                }) : o.open({
-                    className: d,
-                    content: y,
-                    skin: "msg",
-                    time: 2.3
-                }), B = i.page_id, function () {
+                0 == i.rc ? g >= 0 && ("android" == H ? window.js.showSpendCMoney() : "ios" == H ? window.webkit.messageHandlers.showSpendCMoney.postMessage() : B = i.page_id, function () {
                     var t = document.querySelectorAll("." + d);
                     if (!(t && t.length > 5)) {
                         var n = [],
