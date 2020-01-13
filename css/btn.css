@@ -1,0 +1,91 @@
+.cyxy-personal {
+    height: 50px !important;
+    bottom: 280px !important;
+    z-index: 2147483647 !important;
+}
+
+.cyxy-function {
+    height: 50px !important;
+    bottom: 230px !important;
+    z-index: 2147483647 !important;
+}
+
+.cyxy-favorite {
+    height: 50px !important;
+    bottom: 180px !important;
+    z-index: 2147483647 !important;
+}
+
+.cyxy-ctrl-wrapper {
+    position: fixed;
+    bottom: 40px;
+    right: 6px;
+    width: 64px;
+    height: 50px;
+    background-color: transparent;
+    z-index: 2147483647;
+    overflow: hidden;
+}
+
+.cyxy-ctrl-btn {
+    bottom: 30px;
+    right: 13px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+    line-height: 36px;
+    text-align: center;
+    background-color: transparent;
+    position: fixed;
+    margin-bottom: 4px;
+    overflow: hidden;
+}
+
+.cyxy-ctrl-btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.cyxy-ctrl-img {
+    height: 50px;
+    width: 50px;
+}
+.cyxy-options-btn {
+    position: relative;
+}
+
+.cyxy-options-img {
+    height: 36px;
+    width: 36px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cyxy-options-link {
+    height: 50px;
+    width: 36px;
+    right: 20px;
+    bottom: 80px;
+    z-index: 2147483647;
+    position: fixed;
+    border: none;
+    z-index: 2147483647;
+}
+
+.cyxy-options-btn {
+    height: 36px;
+    width: 36px;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+}
+
+.cyxy-options-btn:hover {
+    cursor: pointer;
+}

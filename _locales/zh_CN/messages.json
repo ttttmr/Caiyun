@@ -8,8 +8,12 @@
     "description": "中英网页翻译"
   },
   "appDesc": {
-    "message": "彩云小译双语对照网页翻译插件，一键高效获取母语阅读体验。",
+    "message": "彩云小译双语对照网页翻译插件，针对谷歌浏览器开发的一款网页翻译工具，一键高效获取母语阅读体验。",
     "description": "中英网页翻译"
+  },
+  "launchApp": {
+     "message": "启动彩云小译",
+     "description": ""
   },
   "zh":{
     "message": "中文",
@@ -24,27 +28,27 @@
     "description": ""
   },
   "transZh2En": {
-    "message": "中翻英",
+    "message": "中 >> 英",
     "description": ""
   },
   "transEn2Zh": {
-    "message": "英翻中",
+    "message": "英 >> 中",
     "description": ""
   },
   "transJp2Zh": {
-    "message": "日翻中",
+    "message": "日 >> 中",
     "description": ""
   },
   "transZh2EnAbbr": {
-    "message": "中翻英",
+    "message": "中 >> 英",
     "description": ""
   },
   "transEn2ZhAbbr": {
-    "message": "英翻中",
+    "message": "英 >> 中",
     "description": ""
   },
   "transJp2ZhAbbr": {
-    "message": "日翻中",
+    "message": "日 >> 中",
     "description": ""
   },
   "showOrg": {
@@ -91,6 +95,10 @@
     "message": "点击‘开始’视频会开始播放并实时生成字幕喔！",
     "description": ""
   },
+  "requestReloadAndReload": {
+    "message": "为维护您的隐私权，‘视频翻译功能’需要您点击插件按钮或右键选单中的‘启动彩云小译’，才能在侦测到视频的情况下为您提供自动视频翻译服务。",
+    "description": ""
+  },
   "requestingAudioMsg": {
     "message": "正在开启音频识别功能 ...",
     "description": ""
@@ -113,22 +121,6 @@
   },
   "closeRecorder": {
     "message": "已关闭",
-    "description": ""
-  },
-  "videoTransTitle": {
-    "message": "欢迎使用彩云小译！",
-    "description": ""
-  },
-  "videoTransDes1": {
-    "message": "请选择视频的翻译方向，或点击‘关闭翻译’直接播放。",
-    "description": ""
-  },
-  "videoTransDes2": {
-    "message": "若选择翻译方向，小译会关闭其它页面已开启的小译字幕，专心为当前页面翻译喔！",
-    "description": ""
-  },
-  "closeTrans": {
-    "message": "关闭翻译",
     "description": ""
   },
   "minimizeTransTip": {
@@ -176,11 +168,119 @@
     "description": ""
   },
   "RequireAllowAccessFile": {
-    "message": "请在 chrome://extensions 彩云小译的“详细信息”中勾选“允许访问文件网址”，小译才能为您提供本地视频翻译服务喔>//<",
+    "message": "请在 chrome://extensions 彩云小译的“详细信息”中勾选“允许访问文件网址”，小译才能为您提供本地翻译服务喔>//<",
     "description": ""
   },
   "getCookieFailed": {
     "message": "糟糕！判断登入失败 >//<，请再点击插件，授权小译访问网站的数据",
+    "description": ""
+  },
+  "getCookiesPermissionFailed": {
+    "message": "无法访问Cookie，您将无法登录，请授权小译可读取和更改网站的数据",
+    "description": ""
+  },
+  "networkErr": {
+    "message": "诶呦喂~网络请求出错了～请检查网络连接哟～",
+    "description": ""
+  },
+  "swtErr": {
+    "message": "诶呦喂~划词翻译功能运行出错了～请刷新重试哟～",
+    "description": ""
+  },
+  "tooFreqentErr": {
+    "message": "诶呦喂~操作太频繁啦～请稍后重试哟～",
+    "description": ""
+  },
+  "multiParagraghErr": {
+    "message": "诶呦喂~选中的段落太多啦～可以试试开启整页翻译哟～",
+    "description": ""
+  },
+  "logInOut":{
+    "message": "个人中心",
+    "description": ""
+  },
+  "funcOnOff":{
+    "message": "开启/关闭网页翻译",
+    "description": ""
+  },
+  "addFavorite":{
+    "message": "收藏此页",
+    "description": ""
+  },
+  "videoTrans":{
+    "message": "视频翻译",
+    "description": ""
+  },
+  "optionsAutoSWT":{
+    "message": "启动划词翻译",
+    "description": ""
+  },
+  "optionsAutoWebTrs":{
+    "message": "英文、日文网页自动翻译成中文",
+    "description": ""
+  },
+  "defaultTrsDirect":{
+    "message": "视频翻译默认方向",
+    "description": ""
+  },
+  "defaultSubtype":{
+    "message": "翻译字幕默认显示",
+    "description": ""
+  },
+  "optionBil":{
+    "message": "双语对照",
+    "description": ""
+  },
+  "optionSource":{
+    "message": "只显示原文",
+    "description": ""
+  },
+  "optionTarget":{
+    "message": "只显示译文",
+    "description": ""
+  },
+  "textDocTrs":{
+    "message": "在线文本翻译、文档翻译",
+    "description": ""
+  },
+  "UserCenter":{
+    "message": "个人中心",
+    "description": ""
+  },
+  "xiaoyiApp":{
+    "message": "彩云小译App",
+    "description": ""
+  },
+  "feedback":{
+    "message": "意见反馈",
+    "description": ""
+  },
+  "showDirectly":{
+    "message": "直接显示划译结果",
+    "description": ""
+  },
+  "optionsPage": {
+    "message": "选项页",
+    "description": ""
+  },
+  "defaultAudioApi": {
+    "message": "语音朗读默认工具",
+    "description": ""
+  },
+  "youdao": {
+    "message": "朗读工具1",
+    "description": ""
+  },
+  "baidu": {
+    "message": "朗读工具2",
+    "description": ""
+  },
+  "ctrlHint": {
+    "message": "点我展开/收起",
+    "description": ""
+  },
+  "readingSpeed": {
+    "message": "朗读语速",
     "description": ""
   }
 }

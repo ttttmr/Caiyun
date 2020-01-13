@@ -8,8 +8,12 @@
     "description": ""
   },
   "appDesc": {
-    "message": "Enjoy Chinese-English web translation with one click by Lingocloud.",
+    "message": "Lingocloud is a bilingual translation plugin for Google's browser， delivers a native reading experience at the Click of a button.",
     "description": ""
+  },
+  "launchApp": {
+     "message": "Launch Lingocloud",
+     "description": ""
   },
   "zh":{
     "message": "Simplified Chinese",
@@ -24,15 +28,15 @@
     "description": ""
   },
   "transZh2En": {
-    "message": "Chinese to English",
+    "message": "zh >> en",
     "description": ""
   },
   "transEn2Zh": {
-    "message": "English to Chinese",
+    "message": "en >> zh",
     "description": ""
   },
   "transJp2Zh": {
-    "message": "Japanese to Chinese",
+    "message": "ja >> zh",
     "description": ""
   },
   "transZh2EnAbbr": {
@@ -91,6 +95,10 @@
     "message": "Click 'Play' to enjoy bilingual subtitles of videos produced by LingoCloud AI",
     "description": ""
   },
+  "requestReloadAndReload": {
+    "message": "To protect your privacy, the auto video translation can only be invoked by clicking the browser action or the context menu. After that, Lingocloud is allow to translate video subtitles automatically if it finds a translatable video.",
+    "description": ""
+  },
   "requestingAudioMsg": {
     "message": "Trying to record the audio of the video by the mircrophone ...",
     "description": ""
@@ -113,22 +121,6 @@
   },
   "closeRecorder": {
     "message": "The microphone is turned off",
-    "description": ""
-  },
-  "videoTransTitle": {
-    "message": "Welcome to use LingoCloud!",
-    "description": ""
-  },
-  "videoTransDes1": {
-    "message": "Please choose the translation direction of video, or click 'Play directly'",
-    "description": ""
-  },
-  "videoTransDes2": {
-    "message": "If you choose the translation direction, LingoCloud will close other tabs' LingoCloud subtitle,<br>and focus on this tab to provide you the best translation",
-    "description": ""
-  },
-  "closeTrans": {
-    "message": "Play directly",
     "description": ""
   },
   "minimizeTransTip": {
@@ -176,11 +168,119 @@
     "description": ""
   },
   "RequireAllowAccessFile": {
-    "message": "Please click 'Allow access to file URLs' of LingoCloud Interpreter at chrome://extensions, then LingoCloud can provide you translation for local video files",
+    "message": "Please click 'Allow access to file URLs' of LingoCloud Interpreter at chrome://extensions, then LingoCloud can provide you translation for local files",
     "description": ""
   },
   "getCookieFailed": {
     "message": "Failed to get cookie, please click the extension again and authorize LingoCloud to get the data",
+    "description": ""
+  },
+  "getCookiesPermissionFailed": {
+    "message": "Unable to access Cookie, you will not be able to login, please authorize LingoCloud to read and change the site's data",
+    "description": ""
+  },
+  "networkErr": {
+    "message": "Failed to connect to the internet, please check your internet connection~",
+    "description": ""
+  },
+  "swtErr": {
+    "message": "Translation does not work well, please refresh the page and try again~",
+    "description": ""
+  },
+  "tooFreqentErr": {
+    "message": "Too frequently operation, please try again later~",
+    "description": ""
+  },
+  "multiParagraghErr": {
+    "message": "You may NOT translate multiple paragraphs at one time, please try again~",
+    "description": ""
+  },
+  "logInOut":{
+    "message": "User Center",
+    "description": ""
+  },
+  "funcOnOff":{
+    "message": "Web translation on/off",
+    "description": ""
+  },
+  "addFavorite":{
+    "message": "Favorite",
+    "description": ""
+  },
+  "videoTrans":{
+    "message": "Video translation",
+    "description": ""
+  },
+  "optionsAutoSWT":{
+    "message": "Use Selection Translate",
+    "description": ""
+  },
+  "optionsAutoWebTrs":{
+    "message": "Auto translation of English and Japanese web pages into Chinese",
+    "description": ""
+  },
+  "defaultTrsDirect":{
+    "message": "Default Direction for Video Translation",
+    "description": ""
+  },
+  "defaultSubtype":{
+    "message": "Default Display for Translated Subtitle",
+    "description": ""
+  },
+  "optionBil":{
+    "message": "Bilingual",
+    "description": ""
+  },
+  "optionSource":{
+    "message": "Original Language Only",
+    "description": ""
+  },
+  "optionTarget":{
+    "message": "Target Language Only",
+    "description": ""
+  },
+  "textDocTrs":{
+    "message": "Text Document Translate",
+    "description": ""
+  },
+  "UserCenter":{
+    "message": "User Center",
+    "description": ""
+  },
+  "xiaoyiApp":{
+    "message": "LingoCloud App",
+    "description": ""
+  },
+  "feedback":{
+    "message": "Feedback",
+    "description": ""
+  },
+  "showDirectly":{
+    "message": "Show translation result directly",
+    "description": ""
+  },
+  "optionsPage": {
+    "message": "Settings",
+    "description": ""
+  },
+  "defaultAudioApi": {
+    "message": "Default voice reading tool",
+    "description": ""
+  },
+  "youdao": {
+    "message": "Audio1",
+    "description": ""
+  },
+  "baidu": {
+    "message": "Audio2",
+    "description": ""
+  },
+  "ctrlHint": {
+    "message": "click to fold/unfold",
+    "description": ""
+  },
+  "readingSpeed": {
+    "message": "audio playing speed",
     "description": ""
   }
 }

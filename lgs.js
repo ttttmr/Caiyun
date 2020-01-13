@@ -1,1 +1,101 @@
-!function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=13)}({0:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.JA=t.EN=t.ZH=t.DEFAULT_LANG=t.CY_TOKEN=void 0;t.ZH="zh";t.EN="en";t.JA="ja-JP";t.DEFAULT_LANG="en";t.CY_TOKEN="ejlj3pmk56ss057lt4l4"},1:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.showCyxyIcon=function(){$(".cyxy-personal").show(),$(".cyxy-function").show(),$(".cyxy-favorite").show(),$(".cyxy-video-trans").show(),$("#substr")?$(".cyxy-video-trans")[0].style.filter="none":$(".cyxy-video-trans")[0].style.filter="grayscale(100%)"},t.hideCyxyIcon=function(){$(".cyxy-personal").hide(),$(".cyxy-function").hide(),$(".cyxy-favorite").hide(),$(".cyxy-video-trans").hide()}},13:function(e,t,n){"use strict";var r=n(0),o=n(1),i=(window.location.href,null),a=null,l=!1;function d(){var e;window.intervention_disabled||(window.location.href,function(){if(null!=i)return;l=!1,i=setInterval(()=>{if(0!=$("#habitlab_video_overlay").length){if(l)return clearInterval(i),void(i=null);!function(){let e=s();if(0==e.length)return!1;var t=u(".html5-video-player","video:not(#rewardvideo)","#player-api"),n=t.height(),r=t.width();if(0==n||0==r)return!1;e.width(r),e.height(n),e.css({"background-color":"#333333"}),e.css("z-index",100);const o=e[0];o.style.left=t.offset().left+"px",o.style.top=t.offset().top+"px"}(),function(){const e=document.querySelector("video:not(#rewardvideo)");e&&(e.paused||e.pause())}()}},100)}(),$("#habitlab_video_overlay").length>0&&$("#habitlab_video_overlay").remove(),e="begin",c("video:not(#rewardvideo)"),function(e){if(window.intervention_disabled)return;var t=$("video:not(#rewardvideo)");if(0==t.length)return;if(0==t.width()||0==t.height())return;if(s().data("location")==window.location.href)return;var n=u(".html5-video-player","video:not(#rewardvideo)","#player-api");if(0==n.width()||0==n.height())return;$("#habitlab_video_overlay").remove();const o=$("<div>");$(document.body).append($(function(e,t){if(e.length&&e.length>0)return e=e[0],t||(t={}),t.shadow_div=e,function(e){if(e||(e={}),e.shadow_div){var t=e.shadow_div;delete e.shadow_div}else var t=document.createElement("div");e=function(e){var t={};for(var n in e)t[to_camelcase_string(n)]=e[n];return t}(e);for(let t in e)e[t]&&(e[t]=e[t]);let n=document.createElement("div"),r=n.createShadowRoot();for(var o in e)t.style[o]=e[v];r.appendChild(t),t.shadow_root=r,t.shadow_host=n,n.shadow_root=r,n.shadow_div=t}(t),e.shadow_host}(o)).attr("id","habitlab_video_overlay")),o.css({position:"absolute",display:"table"}),o.data("location",window.location.href).data("duration_set",!1);const i=$("<div>").addClass("contentContainer").css({"text-align":"center",display:"table-cell","vertical-align":"middle"});i.append("<habitlab-logo-v2>"),i.append("<br><br>");const a=$("<h2>").attr("id","message_text").css("font-weight","normal");a.css("color","#FFFFFF"),a.css("margin-bottom","10%"),i.append(a),i.append($("<br>"));var l={cursor:"pointer",width:"119px",background:"#333333","border-radius":"3px","border-radius":"3px","font-family":"PingFangSC-Regular","font-size":"16px",color:"#FFFFFF","text-align":"center","margin-left":"25px",display:"inline-block"};window.innerWidth<596?(i.append(h(r.ZH,chrome.i18n.getMessage("transZh2En"),l)),i.append(h(r.EN,chrome.i18n.getMessage("transEn2Zh"),l)),i.append(h(r.JA,chrome.i18n.getMessage("transJp2Zh"),l))):(i.append(h(r.ZH,chrome.i18n.getMessage("transZh2EnAbbr"),l)),i.append(h(r.EN,chrome.i18n.getMessage("transEn2ZhAbbr"),l)),i.append(h(r.JA,chrome.i18n.getMessage("transJp2ZhAbbr"),l)));const d=$("<button>");var c;d.text(chrome.i18n.getMessage("closeTrans")),d.css(l),d.mouseenter(()=>{d.css("background","#03BA79")}).mouseleave(()=>{d.css("background","#333333")}),d.click(()=>{f(),$button1.hide(),d.hide()}),i.append(d),o.append(i),"begin"===e&&((c=s()).data("duration_set")||c.find("#message_text").html('<span style="visibility: hidden">This video is XX minutes and XX seconds long.<br>Are you sure you want to play it?</span>'),y||(y=setInterval(p,100)),p())}(e))}function s(){var e=$("#habitlab_video_overlay");return 0==e.length?$():$(e[0].shadow_div)}function c(e,t){let n=document.querySelector(e);for(;!n;)n=document.querySelector(e);return t&&t(n),n}function u(...e){for(var t of e){var n=$(t);if(n.length>0)return n}return $()}function h(e,t,n){let r=$("<button>"),o=t;return r.attr("name","langBtn"),r.text(o),r.value=e,r.css(n),r.click(()=>{!function(e){chrome.runtime.sendMessage({type:"showSubByLangSelector",lang:e})}(e),f()}),r.mouseenter(()=>{r.css("background","#03BA79")}).mouseleave(()=>{r.css("background","#333333")}),r}function f(){l=!0,$("#habitlab_video_overlay").remove(),document.querySelector("video:not(#rewardvideo)").play()}var y=null;function p(){var e=s();if(0==e.length)return!1;if(g()&&g()!=function(){if($("ytd-watch").length>0&&null!=$("ytd-watch").attr("video-id"))return $("ytd-watch").attr("video-id");if($("ytd-watch-flexy").length>0&&null!=$("ytd-watch-flexy").attr("video-id"))return $("ytd-watch-flexy").attr("video-id");var e=$("#page");if(0==e.length)return"";var t=e[0].className.split(" ").filter(e=>e.startsWith("video-"));if(0==t.length)return"";return t[0].substr("video-".length)}())return!1;if(1==e.data("duration_set"))return clearInterval(y),y=null,!0;var t=$("video:not(#rewardvideo)");if(0==t.length)return;const n=Math.round(t[0].duration);if(!isNaN(n)){Math.floor(n/60);return e.find("#message_text").html(chrome.i18n.getMessage("videoTransTitle")+"<br><br>"+chrome.i18n.getMessage("videoTransDes1")+"<br>"+chrome.i18n.getMessage("videoTransDes2")),clearInterval(y),y=null,e.data("duration_set",!0),!0}return!1}function g(){var e=window.location.href.match(/^.*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/)|(?:(?:watch)?\?v(?:i)?=|\&v(?:i)?=))([^#\&\?]*).*/);return e?e[1]:null}chrome.runtime.onMessage.addListener(function(e,t,n){"on"==e.action&&c("video:not(#rewardvideo)",()=>{null!=i&&(clearInterval(i),i=null),null!=a&&(clearInterval(a),a=null),"file:"===location.protocol&&(0,o.hideCyxyIcon)(),d()})})}});
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/lang_selector.js");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./src/lang_selector.js":
+/*!******************************!*\
+  !*** ./src/lang_selector.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/Users/appleuser/program/myproject/caiyun-xiaoyi-extension/chrome/src/lang_selector.js'");
+
+/***/ })
+
+/******/ });
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vd2VicGFjay9ib290c3RyYXAiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBO0FBQ0E7O0FBRUE7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBOztBQUVBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBOzs7QUFHQTtBQUNBOztBQUVBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0Esa0RBQTBDLGdDQUFnQztBQUMxRTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBLGdFQUF3RCxrQkFBa0I7QUFDMUU7QUFDQSx5REFBaUQsY0FBYztBQUMvRDs7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsaURBQXlDLGlDQUFpQztBQUMxRSx3SEFBZ0gsbUJBQW1CLEVBQUU7QUFDckk7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQSxtQ0FBMkIsMEJBQTBCLEVBQUU7QUFDdkQseUNBQWlDLGVBQWU7QUFDaEQ7QUFDQTtBQUNBOztBQUVBO0FBQ0EsOERBQXNELCtEQUErRDs7QUFFckg7QUFDQTs7O0FBR0E7QUFDQSIsImZpbGUiOiJsZ3MuanMiLCJzb3VyY2VzQ29udGVudCI6WyIgXHQvLyBUaGUgbW9kdWxlIGNhY2hlXG4gXHR2YXIgaW5zdGFsbGVkTW9kdWxlcyA9IHt9O1xuXG4gXHQvLyBUaGUgcmVxdWlyZSBmdW5jdGlvblxuIFx0ZnVuY3Rpb24gX193ZWJwYWNrX3JlcXVpcmVfXyhtb2R1bGVJZCkge1xuXG4gXHRcdC8vIENoZWNrIGlmIG1vZHVsZSBpcyBpbiBjYWNoZVxuIFx0XHRpZihpbnN0YWxsZWRNb2R1bGVzW21vZHVsZUlkXSkge1xuIFx0XHRcdHJldHVybiBpbnN0YWxsZWRNb2R1bGVzW21vZHVsZUlkXS5leHBvcnRzO1xuIFx0XHR9XG4gXHRcdC8vIENyZWF0ZSBhIG5ldyBtb2R1bGUgKGFuZCBwdXQgaXQgaW50byB0aGUgY2FjaGUpXG4gXHRcdHZhciBtb2R1bGUgPSBpbnN0YWxsZWRNb2R1bGVzW21vZHVsZUlkXSA9IHtcbiBcdFx0XHRpOiBtb2R1bGVJZCxcbiBcdFx0XHRsOiBmYWxzZSxcbiBcdFx0XHRleHBvcnRzOiB7fVxuIFx0XHR9O1xuXG4gXHRcdC8vIEV4ZWN1dGUgdGhlIG1vZHVsZSBmdW5jdGlvblxuIFx0XHRtb2R1bGVzW21vZHVsZUlkXS5jYWxsKG1vZHVsZS5leHBvcnRzLCBtb2R1bGUsIG1vZHVsZS5leHBvcnRzLCBfX3dlYnBhY2tfcmVxdWlyZV9fKTtcblxuIFx0XHQvLyBGbGFnIHRoZSBtb2R1bGUgYXMgbG9hZGVkXG4gXHRcdG1vZHVsZS5sID0gdHJ1ZTtcblxuIFx0XHQvLyBSZXR1cm4gdGhlIGV4cG9ydHMgb2YgdGhlIG1vZHVsZVxuIFx0XHRyZXR1cm4gbW9kdWxlLmV4cG9ydHM7XG4gXHR9XG5cblxuIFx0Ly8gZXhwb3NlIHRoZSBtb2R1bGVzIG9iamVjdCAoX193ZWJwYWNrX21vZHVsZXNfXylcbiBcdF9fd2VicGFja19yZXF1aXJlX18ubSA9IG1vZHVsZXM7XG5cbiBcdC8vIGV4cG9zZSB0aGUgbW9kdWxlIGNhY2hlXG4gXHRfX3dlYnBhY2tfcmVxdWlyZV9fLmMgPSBpbnN0YWxsZWRNb2R1bGVzO1xuXG4gXHQvLyBkZWZpbmUgZ2V0dGVyIGZ1bmN0aW9uIGZvciBoYXJtb255IGV4cG9ydHNcbiBcdF9fd2VicGFja19yZXF1aXJlX18uZCA9IGZ1bmN0aW9uKGV4cG9ydHMsIG5hbWUsIGdldHRlcikge1xuIFx0XHRpZighX193ZWJwYWNrX3JlcXVpcmVfXy5vKGV4cG9ydHMsIG5hbWUpKSB7XG4gXHRcdFx0T2JqZWN0LmRlZmluZVByb3BlcnR5KGV4cG9ydHMsIG5hbWUsIHsgZW51bWVyYWJsZTogdHJ1ZSwgZ2V0OiBnZXR0ZXIgfSk7XG4gXHRcdH1cbiBcdH07XG5cbiBcdC8vIGRlZmluZSBfX2VzTW9kdWxlIG9uIGV4cG9ydHNcbiBcdF9fd2VicGFja19yZXF1aXJlX18uciA9IGZ1bmN0aW9uKGV4cG9ydHMpIHtcbiBcdFx0aWYodHlwZW9mIFN5bWJvbCAhPT0gJ3VuZGVmaW5lZCcgJiYgU3ltYm9sLnRvU3RyaW5nVGFnKSB7XG4gXHRcdFx0T2JqZWN0LmRlZmluZVByb3BlcnR5KGV4cG9ydHMsIFN5bWJvbC50b1N0cmluZ1RhZywgeyB2YWx1ZTogJ01vZHVsZScgfSk7XG4gXHRcdH1cbiBcdFx0T2JqZWN0LmRlZmluZVByb3BlcnR5KGV4cG9ydHMsICdfX2VzTW9kdWxlJywgeyB2YWx1ZTogdHJ1ZSB9KTtcbiBcdH07XG5cbiBcdC8vIGNyZWF0ZSBhIGZha2UgbmFtZXNwYWNlIG9iamVjdFxuIFx0Ly8gbW9kZSAmIDE6IHZhbHVlIGlzIGEgbW9kdWxlIGlkLCByZXF1aXJlIGl0XG4gXHQvLyBtb2RlICYgMjogbWVyZ2UgYWxsIHByb3BlcnRpZXMgb2YgdmFsdWUgaW50byB0aGUgbnNcbiBcdC8vIG1vZGUgJiA0OiByZXR1cm4gdmFsdWUgd2hlbiBhbHJlYWR5IG5zIG9iamVjdFxuIFx0Ly8gbW9kZSAmIDh8MTogYmVoYXZlIGxpa2UgcmVxdWlyZVxuIFx0X193ZWJwYWNrX3JlcXVpcmVfXy50ID0gZnVuY3Rpb24odmFsdWUsIG1vZGUpIHtcbiBcdFx0aWYobW9kZSAmIDEpIHZhbHVlID0gX193ZWJwYWNrX3JlcXVpcmVfXyh2YWx1ZSk7XG4gXHRcdGlmKG1vZGUgJiA4KSByZXR1cm4gdmFsdWU7XG4gXHRcdGlmKChtb2RlICYgNCkgJiYgdHlwZW9mIHZhbHVlID09PSAnb2JqZWN0JyAmJiB2YWx1ZSAmJiB2YWx1ZS5fX2VzTW9kdWxlKSByZXR1cm4gdmFsdWU7XG4gXHRcdHZhciBucyA9IE9iamVjdC5jcmVhdGUobnVsbCk7XG4gXHRcdF9fd2VicGFja19yZXF1aXJlX18ucihucyk7XG4gXHRcdE9iamVjdC5kZWZpbmVQcm9wZXJ0eShucywgJ2RlZmF1bHQnLCB7IGVudW1lcmFibGU6IHRydWUsIHZhbHVlOiB2YWx1ZSB9KTtcbiBcdFx0aWYobW9kZSAmIDIgJiYgdHlwZW9mIHZhbHVlICE9ICdzdHJpbmcnKSBmb3IodmFyIGtleSBpbiB2YWx1ZSkgX193ZWJwYWNrX3JlcXVpcmVfXy5kKG5zLCBrZXksIGZ1bmN0aW9uKGtleSkgeyByZXR1cm4gdmFsdWVba2V5XTsgfS5iaW5kKG51bGwsIGtleSkpO1xuIFx0XHRyZXR1cm4gbnM7XG4gXHR9O1xuXG4gXHQvLyBnZXREZWZhdWx0RXhwb3J0IGZ1bmN0aW9uIGZvciBjb21wYXRpYmlsaXR5IHdpdGggbm9uLWhhcm1vbnkgbW9kdWxlc1xuIFx0X193ZWJwYWNrX3JlcXVpcmVfXy5uID0gZnVuY3Rpb24obW9kdWxlKSB7XG4gXHRcdHZhciBnZXR0ZXIgPSBtb2R1bGUgJiYgbW9kdWxlLl9fZXNNb2R1bGUgP1xuIFx0XHRcdGZ1bmN0aW9uIGdldERlZmF1bHQoKSB7IHJldHVybiBtb2R1bGVbJ2RlZmF1bHQnXTsgfSA6XG4gXHRcdFx0ZnVuY3Rpb24gZ2V0TW9kdWxlRXhwb3J0cygpIHsgcmV0dXJuIG1vZHVsZTsgfTtcbiBcdFx0X193ZWJwYWNrX3JlcXVpcmVfXy5kKGdldHRlciwgJ2EnLCBnZXR0ZXIpO1xuIFx0XHRyZXR1cm4gZ2V0dGVyO1xuIFx0fTtcblxuIFx0Ly8gT2JqZWN0LnByb3RvdHlwZS5oYXNPd25Qcm9wZXJ0eS5jYWxsXG4gXHRfX3dlYnBhY2tfcmVxdWlyZV9fLm8gPSBmdW5jdGlvbihvYmplY3QsIHByb3BlcnR5KSB7IHJldHVybiBPYmplY3QucHJvdG90eXBlLmhhc093blByb3BlcnR5LmNhbGwob2JqZWN0LCBwcm9wZXJ0eSk7IH07XG5cbiBcdC8vIF9fd2VicGFja19wdWJsaWNfcGF0aF9fXG4gXHRfX3dlYnBhY2tfcmVxdWlyZV9fLnAgPSBcIlwiO1xuXG5cbiBcdC8vIExvYWQgZW50cnkgbW9kdWxlIGFuZCByZXR1cm4gZXhwb3J0c1xuIFx0cmV0dXJuIF9fd2VicGFja19yZXF1aXJlX18oX193ZWJwYWNrX3JlcXVpcmVfXy5zID0gXCIuL3NyYy9sYW5nX3NlbGVjdG9yLmpzXCIpO1xuIl0sInNvdXJjZVJvb3QiOiIifQ==
