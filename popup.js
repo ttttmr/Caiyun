@@ -1,28 +1,29 @@
 const options = [
-    "select_translate",
-    // "select_transDirect",
-    // "select_subType",
-]
+  "select_translate"
+  // "select_transDirect",
+  // "select_subType",
+];
 
 function $(id) {
-  return document.getElementById(id)
+  return document.getElementById(id);
 }
 
 // 将选项保存在 chrome.storage 中。
 function save_options() {
   var isAuto = $("auto_trs").checked,
-      isAutoSWT = $("select_translate").checked
-      // transDirect = $("select_transDirect").options.selectedIndex,
-      // subType = $("select_subType").options.selectedIndex;
-  chrome.storage.sync.set({
-    isAutoTranslate: isAuto,
-    isAutoSWT: isAutoSWT,
-    // transDirect: transDirect,
-    // subType: subType,
-  },
-    function () {
+    isAutoSWT = $("select_translate").checked;
+  // transDirect = $("select_transDirect").options.selectedIndex,
+  // subType = $("select_subType").options.selectedIndex;
+  chrome.storage.sync.set(
+    {
+      isAutoTranslate: isAuto,
+      isAutoSWT: isAutoSWT
+      // transDirect: transDirect,
+      // subType: subType,
+    },
+    function() {
       // 更新状态，告诉用户选项已保存。
-      console.log(isAuto, isAutoSWT)
+      console.log(isAuto, isAutoSWT);
     }
   );
 }
@@ -39,14 +40,14 @@ function restore_options() {
       favoriteColor: "red",
       likesColor: true
     },
-    function (items) {
+    function(items) {
       // console.log(items)
       $("auto_trs").checked = items.isAutoTranslate;
       if (items.isAutoTranslate) {
-        chrome.browserAction.setBadgeText({text: "auto"});
-        chrome.browserAction.setBadgeBackgroundColor({color: "#5ebb8d"});
+        chrome.browserAction.setBadgeText({ text: "auto" });
+        chrome.browserAction.setBadgeBackgroundColor({ color: "#5ebb8d" });
       } else {
-        chrome.browserAction.setBadgeText({text: ""});
+        chrome.browserAction.setBadgeText({ text: "" });
       }
       $("select_translate").checked = items.isAutoSWT;
       // $("select_transDirect").options.selectedIndex = items.transDirect;
@@ -55,31 +56,32 @@ function restore_options() {
   );
 }
 document.addEventListener("DOMContentLoaded", () => {
-  restore_options()
-  setI18n()
+  restore_options();
+  setI18n();
 });
-$("auto_trs").addEventListener('change', () => {
-  save_options()
-  if($("auto_trs").checked) {
-    chrome.browserAction.setBadgeText({text: "auto"});
-    chrome.browserAction.setBadgeBackgroundColor({color: "#5ebb8d"});
+$("auto_trs").addEventListener("change", () => {
+  save_options();
+  if ($("auto_trs").checked) {
+    chrome.browserAction.setBadgeText({ text: "auto" });
+    chrome.browserAction.setBadgeBackgroundColor({ color: "#5ebb8d" });
     // chrome.browserAction.setIcon({path: 'images/logo-auto.png'});
     // console.log("auto");
-  }
-  else {
-    chrome.browserAction.setBadgeText({text: ""});
+  } else {
+    chrome.browserAction.setBadgeText({ text: "" });
     // chrome.browserAction.setIcon({path: 'images/logo_128.png'});
   }
-})
-options.forEach((option) => {
-  $(option).addEventListener('change', () => {
-      save_options()
-  })
-})
+});
+options.forEach(option => {
+  $(option).addEventListener("change", () => {
+    save_options();
+  });
+});
 
-function setI18n () {
-  $('optionsAutoSWT').innerText = chrome.i18n.getMessage('optionsAutoSWT')
-  $('optionsAutoWebTrs').innerText = chrome.i18n.getMessage('optionsAutoWebTrs')
+function setI18n() {
+  $("optionsAutoSWT").innerText = chrome.i18n.getMessage("optionsAutoSWT");
+  $("optionsAutoWebTrs").innerText = chrome.i18n.getMessage(
+    "optionsAutoWebTrs"
+  );
 
   // $('defaultTrsDirect').innerText = chrome.i18n.getMessage('defaultTrsDirect')
   // $('transZh2En').innerText = chrome.i18n.getMessage('transZh2En')
@@ -91,14 +93,14 @@ function setI18n () {
   // $('optionSource').innerText = chrome.i18n.getMessage('optionSource')
   // $('optionTarget').innerText = chrome.i18n.getMessage('optionTarget')
 
-  $('textDocTrs').innerText = chrome.i18n.getMessage('textDocTrs')
-  $('UserCenter').innerText = chrome.i18n.getMessage('UserCenter')
-  $('xiaoyiApp').innerText = chrome.i18n.getMessage('xiaoyiApp')
-  $('feedback').innerText = chrome.i18n.getMessage('feedback')
+  $("textDocTrs").innerText = chrome.i18n.getMessage("textDocTrs");
+  $("UserCenter").innerText = chrome.i18n.getMessage("UserCenter");
+  $("xiaoyiApp").innerText = chrome.i18n.getMessage("xiaoyiApp");
+  $("feedback").innerText = chrome.i18n.getMessage("feedback");
 }
 
 var bg = chrome.extension.getBackgroundPage();
-console.log(bg)
+console.log(bg);
 bg.main();
 // chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
 //   let tab = tabs[0];

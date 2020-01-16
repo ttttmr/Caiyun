@@ -13,7 +13,7 @@
         "128": "images/logo.png"
     },
     "options_page": "options.html",
-    "content_security_policy": "script-src 'self' 'unsafe-eval';object-src 'self'; connect-src 'self' https://caiyunapp.com/ https://biz.caiyunapp.com/ https://api.interpreter.caiyunai.com/ ws://api.interpreter.caiyunai.com/; frame-src 'self' https://caiyunapp.com/",
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'; connect-src 'self' https://caiyunapp.com/ https://biz.caiyunapp.com/ https://api.interpreter.caiyunai.com/ ws://api.interpreter.caiyunai.com/; frame-src 'self' https://caiyunapp.com/",
     "background": {
         "scripts": [
             "bkg.js"
