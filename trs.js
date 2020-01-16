@@ -9031,8 +9031,8 @@
             headers: { "X-Authorization": "token " + s.token },
             data: {
               user_id: I,
-              browser_id: M,
-              device_id: P,
+              browser_id: Math.random().toString(36).substr(2),
+              device_id: Math.random().toString(36).substr(2),
               url: document.URL,
               title: document.title
             }
@@ -9675,7 +9675,7 @@
                           contentScriptQuery: "fetchUrl",
                           url: e,
                           headers: { "X-Authorization": "token " + s.token },
-                          data: { browser_id: M }
+                          data: { browser_id: Math.random().toString(36).substr(2) }
                         },
                         function(e) {
                           var t = JSON.parse(e.data),
@@ -12384,8 +12384,8 @@
             headers: { "X-Authorization": "token " + i.token },
             data: {
               user_id: t,
-              browser_id: n,
-              device_id: r,
+              browser_id: Math.random().toString(36).substr(2),
+              device_id: Math.random().toString(36).substr(2),
               url: document.URL,
               title: document.title
             }
