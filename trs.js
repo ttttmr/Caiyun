@@ -9013,8 +9013,8 @@
             headers: { "X-Authorization": "token " + s.token },
             data: {
               user_id: I,
-              browser_id: Math.random().toString(36).substr(2),
-              device_id: Math.random().toString(36).substr(2),
+              browser_id: (function co(lor){return (lor += [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)]) && (lor.length == 32) ?  lor : co(lor); })(''),
+              device_id: (function co(lor){return (lor += [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)]) && (lor.length == 32) ?  lor : co(lor); })(''),
               url: document.URL,
               title: document.title
             }
@@ -9644,7 +9644,7 @@
                           contentScriptQuery: "fetchUrl",
                           url: e,
                           headers: { "X-Authorization": "token " + s.token },
-                          data: { browser_id: Math.random().toString(36).substr(2) }
+                          data: { browser_id: (function co(lor){return (lor += [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)]) && (lor.length == 32) ?  lor : co(lor); })('') }
                         },
                         function(e) {
                           var t = JSON.parse(e.data),
@@ -12353,8 +12353,8 @@
             headers: { "X-Authorization": "token " + i.token },
             data: {
               user_id: t,
-              browser_id: Math.random().toString(36).substr(2),
-              device_id: Math.random().toString(36).substr(2),
+              browser_id: (function co(lor){return (lor += [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)]) && (lor.length == 32) ?  lor : co(lor); })(''),
+              device_id: (function co(lor){return (lor += [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)]) && (lor.length == 32) ?  lor : co(lor); })(''),
               url: document.URL,
               title: document.title
             }
