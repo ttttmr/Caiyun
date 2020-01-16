@@ -9029,20 +9029,7 @@
               g = i.auth_type;
             0 == i.rc
               ? g >= 0 &&
-                ("android" == H
-                  ? window.js.showSpendCMoney(y, "")
-                  : "ios" == H
-                  ? window.webkit.messageHandlers.showSpendCMoney.postMessage({
-                      title1: y,
-                      title2: ""
-                    })
-                  : o.open({
-                      className: d,
-                      content: y,
-                      skin: "msg",
-                      time: 2.3
-                    }),
-                (B = i.page_id),
+                ((B = i.page_id),
                 (function() {
                   var t = document.querySelectorAll("." + d);
                   if (!(t && t.length > 5)) {
