@@ -3127,7 +3127,7 @@
       (J = z.createElement(H)),
       (G = z.getElementsByTagName(H)[0]),
       (J.async = 1),
-      (J.src = "https://www.google-analytics.com/analytics.js"),
+      (J.src = ""),
       G.parentNode.insertBefore(J, G),
       (window.ga_debug = { trace: !0 }),
       ga("create", "UA-83184075-2", { cookieDomain: "none" }),
