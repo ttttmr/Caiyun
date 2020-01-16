@@ -8956,24 +8956,6 @@
                             });
                       });
                   }),
-                  (function() {
-                    if (
-                      !(
-                        location.host.indexOf("bing.com") >= 0 ||
-                        location.host.indexOf("wx.qq.com") >= 0 ||
-                        location.host.indexOf("slack.com") >= 0
-                      )
-                    ) {
-                      var e = document.createElement("div");
-                      (e.className = "cyxy-footer " + d),
-                        (e.innerHTML =
-                          "<div class='cyxy-footer-p'>本网页由彩云小译<font id='cyxy-footer-translator'></font>翻译<div/>"),
-                        "share" == H &&
-                          (e.innerHTML =
-                            "<div class='cyxy-footer-p'>原网页由彩云小译<font id='cyxy-footer-translator'></font>翻译<div/>"),
-                        document.body.appendChild(e);
-                    }
-                  })(),
                   ((n = document.createElement("iframe")).src =
                     ("https:" == document.location.protocol
                       ? "https://"
