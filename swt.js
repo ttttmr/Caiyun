@@ -747,18 +747,18 @@
           (h = 1 === e.audioApi ? a : s),
           (y = e.audioSpeed);
       }
-    ),
-      setInterval(function() {
-        chrome.storage.sync.get(
-          { isDirectTranslate: !1, isAutoSWT: !0, audioApi: 0, audioSpeed: 5 },
-          function(e) {
-            (d = e.isDirectTranslate),
-              (p = e.isAutoSWT),
-              (h = 1 === e.audioApi ? a : s),
-              (y = e.audioSpeed);
-          }
-        );
-      }, 2500);
+    )
+      // setInterval(function() {
+      //   chrome.storage.sync.get(
+      //     { isDirectTranslate: !1, isAutoSWT: !0, audioApi: 0, audioSpeed: 5 },
+      //     function(e) {
+      //       (d = e.isDirectTranslate),
+      //         (p = e.isAutoSWT),
+      //         (h = 1 === e.audioApi ? a : s),
+      //         (y = e.audioSpeed);
+      //     }
+      //   );
+      // }, 2500);
   },
   2: function(e, t, n) {
     var r;
