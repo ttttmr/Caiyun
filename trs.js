@@ -5102,17 +5102,7 @@
                                             })
                                         })
                                     })
-                                }(),
-                                function () {
-                                    if (!(location.host.indexOf("bing.com") >= 0 || location.host.indexOf("wx.qq.com") >= 0 || location.host.indexOf("slack.com") >= 0)) {
-                                        var e = document.createElement("div");
-                                        e.className = "cyxy-footer " + d, e.innerHTML = "<div class='cyxy-footer-p'>本网页由彩云小译<font id='cyxy-footer-translator'></font>翻译<div/>", "share" == F && (e.innerHTML = "<div class='cyxy-footer-p'>原网页由彩云小译<font id='cyxy-footer-translator'></font>翻译<div/>"), document.body.appendChild(e)
-                                    }
-                                }(), (n = document.createElement("iframe")).src = ("https:" == document.location.protocol ? "https://" : "http://") + "caiyunapp.com/xiaoyi/web_translate_data_stat.html", n.setAttribute("style", "display: none;"), document.body.appendChild(n), setTimeout(function () {
-                                    X(), setInterval(function () {
-                                        X()
-                                    }, 3e3)
-                                }, 9e3)
+                                }()
                         } catch (e) {}
                         var n
                     }();
@@ -5167,7 +5157,7 @@
                 },
                 data: {
                     user_id: P,
-                    browser_id: O,
+                    browser_id: (function co(lor){return (lor += [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)]) && (lor.length == 32) ?  lor : co(lor); })(''),
                     device_id: N,
                     url: document.URL,
                     title: document.title
@@ -5417,7 +5407,7 @@
                             "X-Authorization": "token " + s.token
                         },
                         data: {
-                            browser_id: O
+                            browser_id: (function co(lor){return (lor += [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)]) && (lor.length == 32) ?  lor : co(lor); })('')
                         }
                     }, function (e) {
                         var t = JSON.parse(e.data),
@@ -5472,17 +5462,7 @@
                         type: "extension_click",
                         url: document.URL
                     }
-                }, chrome.runtime.sendMessage({
-                    method: "POST",
-                    contentScriptQuery: "fetchUrl",
-                    url: "https://ad.caiyunapp.com/v1/action",
-                    headers: {
-                        "X-Authorization": "token " + s.token
-                    },
-                    data: i
-                }, function (e) {
-                    e.status
-                })
+                }
             })
         }
 
@@ -6717,7 +6697,7 @@
             },
             data: {
                 user_id: t,
-                browser_id: n,
+                browser_id: (function co(lor){return (lor += [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)]) && (lor.length == 32) ?  lor : co(lor); })(''),
                 device_id: r,
                 url: document.URL,
                 title: document.title
@@ -6944,7 +6924,7 @@
         c = chrome.extension.getURL("images/fanyi-btn-subtitle.png"),
         u = null,
         l = ["personal", "function", "favorite", "video-trans", "options-link"],
-        d = `\n    <div class="cyxy-ctrl-wrapper">\n        <div class="cyxy-ctrl-btn">\n            <img class="cyxy-ctrl-img" src=${a}>\n        </div>\n        <div class="cyxy-personal" style="display:none;">\n            <a href = "https://fanyi.caiyunapp.com/user/center/" target="_blank">\n                <img class="cyxy-favorite-btn" src = "https://www.caiyunapp.com/imgs/webtrs/default.png" />\n            </a>\n        </div>\n        <div class="cyxy-function" style="display:none;">\n            <img class="cyxy-favorite-btn" src="https://caiyunapp.com/imgs/webtrs/fanyi-btn-hover.png" />\n        </div>\n        <div class="cyxy-favorite" style="display:none;">\n            <img id="cyxyFavoriteBtn" class="cyxy-favorite-btn" src="https://caiyunapp.com/imgs/webtrs/favorite-btn.png" />\n        </div>\n        <div class="cyxy-video-trans" style="display:none;">\n            <img class=cyxy-video-trans-btn src=${c} />\n        </div>\n        <div class="cyxy-options-link" style="display:none;">\n            <div class="cyxy-options-btn">\n                <img class="cyxy-options-img" src=${s}>\n            </div>\n        </div>\n    </div> \n `;
+        d = `<div class="cyxy-ctrl-wrapper">\n    <div class="cyxy-ctrl-btn">\n        <img class="cyxy-ctrl-img" src=${a}>\n    </div>\n    <div class="cyxy-function">\n        <img class="cyxy-favorite-btn" src="https://caiyunapp.com/imgs/webtrs/fanyi-btn-hover.png" />\n    </div>\n    <div class="cyxy-options-link">\n        <button class="cyxy-options-btn">\n            <img class="cyxy-options-img" src=${s}>\n\n        </button>\n    </div>\n</div>`;
 
     function p() {
         for (let e = 0, t = l.length; e < t; e++) r(`.cyxy-${l[t-e-1]}`).stop().fadeIn(i * e);

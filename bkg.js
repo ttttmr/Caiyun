@@ -1599,7 +1599,7 @@
             let t = JSON.parse(e);
             1 == t.to_close && null == p && (f(p = t.msg), f(chrome.i18n.getMessage("closeRecorder")), chrome.tabs.sendMessage(E, {
                 type: "stopSubtitle"
-            }), ga("send", "event", R, "closeSubByWS", p)), t && 0 == t.rc && t.target ? chrome.tabs.sendMessage(E, {
+            })), t && 0 == t.rc && t.target ? chrome.tabs.sendMessage(E, {
                 type: "subtitleMsg",
                 subtitle: t
             }) : chrome.tabs.sendMessage(E, {
@@ -1625,7 +1625,7 @@
                 }(2500), b(function () {
                     f(chrome.i18n.getMessage("closeRecorder")), chrome.tabs.sendMessage(E, {
                         type: "stopSubtitle"
-                    }), ga("send", "event", R, "closeSubByWS", "ws.onerror")
+                    })
                 })
         }
     }
@@ -1670,7 +1670,7 @@
         });
         else if ("closeSubByVideoBtn" == e.type) chrome.tabs.sendMessage(E, {
             type: "closeSubtitle"
-        }), ga("send", "event", R, e.type, u);
+        });
         else if ("recopen" == e.type) b(function () {
             u = e.lang, (r = Recorder({
                 bitRate: 16,
@@ -1685,20 +1685,19 @@
             }), n({
                 type: "accept"
             })
-        }), ga("send", "event", R, e.type, e.lang);
+        });
         else if ("recclose" == e.type) b(function () {
             f(chrome.i18n.getMessage("closeRecorder")), n({
                 type: "reset"
             })
-        }), ga("send", "event", R, e.type, e.lang);
-        else if ("switchTrack" == e.type) ga("send", "event", R, e.typ, e.newTrack);
-        else if ("clickCyxyBtn" == e.type) q() ? ga("send", "event", `${x}${e.btnName}`, "click", "isLoggedIn") : ga("send", "event", `${x}${e.btnName}`, "click", "isUnlogin");
-        else if ("useDictAPI" == e.type || "useTranslatorAPI" == e.type) M ? ga("send", "event", `${x}${e.type}`, `${e.direction}`, "isLoggedIn") : ga("send", "event", `${x}${e.type}`, `${e.direction}`, "isUnlogin");
-        else if ("audio" == e.type) M ? ga("send", "event", `${x}${e.type}`, "read", "isLoggedIn") : ga("send", "event", `${x}${e.type}`, "read", "isUnlogin");
+        });
+        else if ("switchTrack" == e.type);
+        else if ("clickCyxyBtn" == e.type) q();
+        else if ("useDictAPI" == e.type || "useTranslatorAPI" == e.type) M;
+        else if ("audio" == e.type) M;
         else if ("showSWTview" == e.type) {
             let t = B(e.direction);
-            ga("send", "pageview", `${e.type}?utm_source=${t}&utm_medium=website`)
-        } else "optionsPageview" == e.type && ga("send", "pageview", "options")
+        } else "optionsPageview" == e.type
     }
 
     function O(e) {
@@ -1737,9 +1736,7 @@
                     })
                 }
                 k = [E]
-            }(e, u), ga("send", "event", "video", `transByVideoBtn:${u}`), ga("send", "pageview", "subtitle")
-        }, function () {
-            ga("send", "event", "video", "requestLogin")
+            }(e, u)
         })
     }
     var M = "";
@@ -1811,7 +1808,7 @@
             }), chrome.tabs.executeScript(e, {
                 file: "vbt.js",
                 runAt: t
-            }), ga("send", "pageview", `web_trs?utm_source=${r}&utm_medium=website`), M ? ga("send", "event", `${x}web`, "open", "isLoggedIn") : ga("send", "event", `${x}web`, "open", "isUnlogin"), setTimeout(function () {
+            }), setTimeout(function () {
                 chrome.tabs.sendMessage(e, {
                     type: "checkInserted",
                     script: "sub"
@@ -2034,14 +2031,6 @@
             a.captureException(e)
         }
     }
-    var H, J, G, Y, V;
-    H = window, J = document, G = "script", H.GoogleAnalyticsObject = "ga", H.ga = H.ga || function () {
-        (H.ga.q = H.ga.q || []).push(arguments)
-    }, H.ga.l = 1 * new Date, Y = J.createElement(G), V = J.getElementsByTagName(G)[0], Y.async = 1, Y.src = "https://www.google-analytics.com/analytics.js", V.parentNode.insertBefore(Y, V), window.ga_debug = {
-        trace: !0
-    }, ga("create", "UA-83184075-2", {
-        cookieDomain: "none"
-    }), ga("set", "checkProtocolTask", function () {})
 }, function (e, t, n) {
     "use strict";
     var r = n(8);
