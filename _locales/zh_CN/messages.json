@@ -8,7 +8,7 @@
     "description": "中英网页翻译"
   },
   "appDesc": {
-    "message": "彩云小译双语对照网页翻译插件，针对谷歌浏览器开发的一款网页翻译工具，一键高效获取母语阅读体验。",
+    "message": "彩云小译双语对照网页翻译插件，针对浏览器开发的一款网页翻译工具，一键高效获取母语阅读体验。",
     "description": "中英网页翻译"
   },
   "launchApp": {
@@ -96,7 +96,7 @@
     "description": ""
   },
   "requestReloadAndReload": {
-    "message": "为维护您的隐私权，‘视频翻译功能’需要您点击插件按钮或右键选单中的‘启动彩云小译’，才能在侦测到视频的情况下为您提供自动视频翻译服务。",
+    "message": "为维护您的隐私权益，“视频翻译功能”需要您重新打开页面，点击插件按钮或右键选单中的【启动彩云小译】，才能在侦测到视频的情况下为您提供视频翻译服务。",
     "description": ""
   },
   "requestingAudioMsg": {
@@ -175,6 +175,10 @@
     "message": "糟糕！判断登入失败 >//<，请再点击插件，授权小译访问网站的数据",
     "description": ""
   },
+  "getAllUrlsFailed": {
+    "message": "为了您正常使用划词翻译、自动翻译和视频翻译功能，请允许小译读取和更改您在访问的网站上的所有数据",
+    "description": ""
+  },
   "getCookiesPermissionFailed": {
     "message": "无法访问Cookie，您将无法登录，请授权小译可读取和更改网站的数据",
     "description": ""
@@ -200,7 +204,7 @@
     "description": ""
   },
   "funcOnOff":{
-    "message": "开启/关闭网页翻译",
+    "message": "双语、原文、译文切换",
     "description": ""
   },
   "addFavorite":{
@@ -220,11 +224,11 @@
     "description": ""
   },
   "defaultTrsDirect":{
-    "message": "视频翻译默认方向",
+    "message": "视频字幕翻译默认方向",
     "description": ""
   },
   "defaultSubtype":{
-    "message": "翻译字幕默认显示",
+    "message": "视频字幕翻译默认显示",
     "description": ""
   },
   "optionBil":{

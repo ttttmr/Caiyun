@@ -172,11 +172,15 @@
     "description": ""
   },
   "getCookieFailed": {
-    "message": "糟糕！判斷登入失敗 >//<，請點擊插件，授權小譯訪問網站的數據",
+    "message": "糟糕！判斷登錄失敗，請右键點擊插件，授權小譯訪問網站的數據",
+    "description": ""
+  },
+  "getAllUrlsFailed": {
+    "message": "為了您正常使用劃詞翻譯、自動翻譯和視頻翻譯功能，請允許小譯讀取和更改您在訪問的網站上的所有數據",
     "description": ""
   },
   "getCookiesPermissionFailed": {
-    "message": "無法訪問Cookie，您將無法登錄，請授權小譯可讀取和更改網站的數據",
+    "message": "無法訪問Cookie，您將無法登錄，請允許小譯可讀取和更改網站的數據",
     "description": ""
   },
   "networkErr": {
@@ -200,7 +204,7 @@
     "description": ""
   },
   "funcOnOff":{
-    "message": "開啟/關閉網頁翻譯",
+    "message": "雙語、原文、譯文切換",
     "description": ""
   },
   "addFavorite":{

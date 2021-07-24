@@ -8,7 +8,7 @@
     "description": ""
   },
   "appDesc": {
-    "message": "Lingocloud is a bilingual translation plugin for Google's browser， delivers a native reading experience at the Click of a button.",
+    "message": "Lingocloud is a bilingual translation extension， delivers a native reading experience at the Click of a button.",
     "description": ""
   },
   "launchApp": {
@@ -175,8 +175,12 @@
     "message": "Failed to get cookie, please click the extension again and authorize LingoCloud to get the data",
     "description": ""
   },
+  "getAllUrlsFailed": {
+    "message": "In order for you to use the selection translation, automatic translation and video translation functions normally, please allow Lingocloud to read and change all the data on the website you visit.",
+    "description": ""
+  },
   "getCookiesPermissionFailed": {
-    "message": "Unable to access Cookie, you will not be able to login, please authorize LingoCloud to read and change the site's data",
+    "message": "Unable to access Cookie, you will not be able to login, please allow LingoCloud to read and change the site's data",
     "description": ""
   },
   "networkErr": {
@@ -200,7 +204,7 @@
     "description": ""
   },
   "funcOnOff":{
-    "message": "Web translation on/off",
+    "message": "Translation Mode Switch",
     "description": ""
   },
   "addFavorite":{
