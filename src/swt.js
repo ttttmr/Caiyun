@@ -254,7 +254,7 @@
       ]),
       (t.TRS_TOKEN = "lqkr1tfixq1wa9kmj9po"),
       (t.PUBLIC_SENTRY_URL =
-        "http://c49231b0334e4624b8941767b8f6bfa4@sentry.in.caiyunapp.com/22"),
+        ""),
       (t.SUB_TYPE_l = ["bilingual", "original", "target"]),
       (t.DEFAULT_SUB_TYPE = "bilingual"),
       (t.SUB_TYPE_TGT = "target"),

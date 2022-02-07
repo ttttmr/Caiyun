@@ -16938,7 +16938,7 @@
               "local" != g.ENV &&
                 c
                   .config(
-                    "https://c49231b0334e4624b8941767b8f6bfa4@sentry.in.caiyunapp.com/22",
+                    "",
                     { release: g.VERSION, environment: g.ENV, sampleRate: 1 }
                   )
                   .install();
