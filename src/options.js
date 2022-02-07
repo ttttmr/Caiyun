@@ -1216,6 +1216,7 @@
     const s = navigator.userAgent.includes("Firefox"),
       c = /apple/i.test(navigator.vendor);
     async function u(e) {
+      return;
       if (s || c) {
         const { isEnableGa: e = !1 } = await browser.storage.sync.get({
           isEnableGa: !1,
