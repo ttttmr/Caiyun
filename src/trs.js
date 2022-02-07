@@ -17558,20 +17558,20 @@
                               "<div class='cyxy-footer-p'>原网页由彩云小译<font id='cyxy-footer-translator'></font>翻译<div/>"),
                           document.body.appendChild(e);
                       }
-                    })(),
-                    ((r = document.createElement("iframe")).src =
-                      ("https:" == document.location.protocol
-                        ? "https://"
-                        : "http://") +
-                      "caiyunapp.com/xiaoyi/web_translate_data_stat.html"),
-                    r.setAttribute("style", "display: none;"),
-                    document.body.appendChild(r),
-                    setTimeout(function () {
-                      te(),
-                        setInterval(function () {
-                          te();
-                        }, 3e3);
-                    }, 9e3);
+                    })();
+                    // ((r = document.createElement("iframe")).src =
+                    //   ("https:" == document.location.protocol
+                    //     ? "https://"
+                    //     : "http://") +
+                    //   "caiyunapp.com/xiaoyi/web_translate_data_stat.html"),
+                    // r.setAttribute("style", "display: none;"),
+                    // document.body.appendChild(r),
+                    // setTimeout(function () {
+                    //   te(),
+                    //     setInterval(function () {
+                    //       te();
+                    //     }, 3e3);
+                    // }, 9e3);
                 } catch (e) {}
                 var r;
               })();
