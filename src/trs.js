@@ -18364,19 +18364,19 @@
               userAgent: B,
               extra: { type: "extension_click", url: document.URL },
             };
-            var c;
-            t.env.SALADICT &&
-              ((s.packgeName = "xiaoyi_extension_sala"),
-              (s.ostype = "web-sala")),
-              (c = s),
-              u({
-                method: "POST",
-                url: "https://ad.caiyunapp.com/v1/action",
-                headers: { "X-Authorization": "token " + g.token },
-                data: c,
-              }).then(function (e) {
-                e.status;
-              });
+            // var c;
+            // t.env.SALADICT &&
+            //   ((s.packgeName = "xiaoyi_extension_sala"),
+            //   (s.ostype = "web-sala")),
+            //   (c = s),
+            //   u({
+            //     method: "POST",
+            //     url: "https://ad.caiyunapp.com/v1/action",
+            //     headers: { "X-Authorization": "token " + g.token },
+            //     data: c,
+            //   }).then(function (e) {
+            //     e.status;
+            //   });
           });
         }
         function re() {
