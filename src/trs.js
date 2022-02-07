@@ -1221,6 +1221,7 @@
         (0, r.reportPageview)(e);
       }),
       (t.firebaseEvent = async function (...e) {
+        return;
         e.forEach((e) => {
           (0, i.cyxyCollectEvent)(e.name, e.params);
           const t = { category: "firebase", action: e.name },

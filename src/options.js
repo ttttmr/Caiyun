@@ -1749,6 +1749,7 @@
           audioSpeed: 5,
         },
         function (e) {
+          return;
           var t;
           ($("#auto_trs")[0].checked = e.isAutoTranslate),
             e.isAutoTranslate
