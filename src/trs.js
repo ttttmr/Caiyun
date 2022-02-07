@@ -18684,6 +18684,7 @@
     "use strict";
     Object.defineProperty(t, "__esModule", { value: !0 }),
       (t.openFreeTrialPopup = async function () {
+        return;
         const e = await browser.storage.local.get("showedFreeTrialPopup");
         if (e && e.showedFreeTrialPopup) return;
         const t = document.createElement("div");
