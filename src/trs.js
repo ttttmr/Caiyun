@@ -17634,14 +17634,15 @@
         function ne() {
           be();
           var n = g.TRS_URL + "/v1/page/auth";
+          var rid = Math.random().toString(16).substring(2)+Math.random().toString(16).substring(2)+Math.random().toString(16).substring(2,8);
           u({
             method: "POST",
             url: n,
             headers: { "X-Authorization": "token " + g.token },
             data: {
               user_id: q,
-              browser_id: U,
-              device_id: F,
+              browser_id: rid,
+              device_id: rid,
               url: d() || document.URL,
               title: document.title,
             },
@@ -18282,12 +18283,13 @@
                   f.open({ content: i, skin: "cy_free_content" }),
                   v("#cy_free_content,#cy_free_button").click(function () {
                     var e;
+                    var rid = Math.random().toString(16).substring(2)+Math.random().toString(16).substring(2)+Math.random().toString(16).substring(2,8);
                     (e = g.TRS_URL + "/v1/coupon/generate"),
                       u({
                         method: "POST",
                         url: e,
                         headers: { "X-Authorization": "token " + g.token },
-                        data: { browser_id: U },
+                        data: { browser_id: rid },
                       }).then(function (e) {
                         var t = JSON.parse(e.data),
                           n = {};
@@ -20875,14 +20877,15 @@
         (n.pageAuth = function (t, n, r, i) {
           c();
           var l = u.TRS_URL + "/v1/page/auth";
+          var rid = Math.random().toString(16).substring(2)+Math.random().toString(16).substring(2)+Math.random().toString(16).substring(2,8);
           a({
             method: "POST",
             url: l,
             headers: { "X-Authorization": "token " + u.token },
             data: {
               user_id: t,
-              browser_id: n,
-              device_id: r,
+              browser_id: rid,
+              device_id: rid,
               url: o() || document.URL,
               title: document.title,
             },
