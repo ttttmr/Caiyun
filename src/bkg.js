@@ -4077,9 +4077,9 @@
     const c = navigator.userAgent.includes("Firefox"),
       u = /apple/i.test(navigator.vendor);
     var l, f;
-    (0, n.setupVolcengine)(),
-      (0, n.setupVolcengineBackgroundListener)(),
-      (0, s.firebasePageView)("background");
+    // (0, n.setupVolcengine)(),
+    //   (0, n.setupVolcengineBackgroundListener)(),
+    //   (0, s.firebasePageView)("background");
     var p = r(23),
       h = !1,
       d = !0,
