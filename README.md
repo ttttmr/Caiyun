@@ -23,4 +23,4 @@ If you are **using Chrome**, you need to install it manually
 
 ## Firefox
 
-Download `ipx` file from [releases](https://github.com/ttttmr/Caiyun/releases) to install
+Download `xpi` file from [releases](https://github.com/ttttmr/Caiyun/releases) to install
