@@ -1,0 +1,16 @@
+.cyxy-pdf-trans.pdfViewer .cyxy-trs-source {
+  outline: 1px solid #fff;
+  background: #fff;
+  user-select: none;
+}
+
+.cyxy-pdf-trans.pdfViewer .textLayer {
+  opacity: 1;
+}
+
+.cyxy-pdf-trans.pdfViewer .cyxy-trs-target {
+  color: #000;
+  position: absolute;
+  left: 0;
+  user-select: text;
+}

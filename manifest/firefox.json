@@ -1,0 +1,65 @@
+{
+  "version": "1.2.13",
+  "default_locale": "en",
+  "name": "__MSG_appName__",
+  "short_name": "__MSG_appNameAbbr__",
+  "manifest_version": 2,
+  "description": "__MSG_appDesc__",
+  "homepage_url": "https://fanyi.caiyunapp.com",
+  "icons": {
+    "16": "images/logo.png",
+    "128": "images/logo.png"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true,
+    "browser_style": false
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "background": {
+    "scripts": [
+      "lib/browser-polyfill.js",
+      "bkg.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "LingoCloud",
+    "default_icon": "images/logo.png"
+  },
+  "permissions": [
+    "activeTab",
+    "cookies",
+    "storage",
+    "tabs",
+    "webNavigation",
+    "<all_urls>",
+    "*://*.caiyunapp.com/*",
+    "*://*.caiyunai.com/*",
+    "contextMenus"
+  ],
+  "optional_permissions": [],
+  "web_accessible_resources": [
+    "assets/*",
+    "trs.js",
+    "images/*",
+    "css/*",
+    "options.html",
+    "options.js",
+    "lib/*"
+  ],
+  "commands": {
+    "translate-page": {
+      "suggested_key": {
+        "default": "Alt+Shift+P",
+        "mac": "Command+Shift+P"
+      },
+      "description": "__MSG_launchApp__"
+    }
+  },
+  "applications": {
+    "gecko": {
+      "id": "caiyunxiaoyi@xlab.app",
+      "strict_min_version": "57.0"
+    }
+  }
+}
