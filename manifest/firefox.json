@@ -1,5 +1,4 @@
 {
-  "update_url": "https://clients2.google.com/service/update2/crx",
   "version": "1.2.13",
   "default_locale": "en",
   "name": "__MSG_appName__",
@@ -14,7 +13,6 @@
   "options_ui": {
     "page": "options.html",
     "open_in_tab": true,
-    "chrome_style": false,
     "browser_style": false
   },
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
@@ -22,8 +20,7 @@
     "scripts": [
       "lib/browser-polyfill.js",
       "bkg.js"
-    ],
-    "persistent": true
+    ]
   },
   "browser_action": {
     "default_title": "LingoCloud",
@@ -35,12 +32,10 @@
     "storage",
     "tabs",
     "webNavigation",
-    "browser_action",
     "<all_urls>",
     "*://*.caiyunapp.com/*",
     "*://*.caiyunai.com/*",
-    "contextMenus",
-    "tabCapture"
+    "contextMenus"
   ],
   "optional_permissions": [],
   "web_accessible_resources": [
@@ -59,6 +54,12 @@
         "mac": "Command+Shift+P"
       },
       "description": "__MSG_launchApp__"
+    }
+  },
+  "applications": {
+    "gecko": {
+      "id": "caiyunxiaoyi@xlab.app",
+      "strict_min_version": "57.0"
     }
   }
 }

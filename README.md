@@ -10,13 +10,17 @@ Base [彩云小译](https://chrome.google.com/webstore/detail/lingocloud-web-tra
 
 # Install
 
-Download [the crx file](https://github.com/ttttmr/Caiyun/releases/download/0.0.23/caiyun.crx) to install
+## Chromium
+
+Download `crx` file from [releases](https://github.com/ttttmr/Caiyun/releases) to install
 
 If you are **using Chrome**, you need to install it manually
 
-## Manual
-
-1. `git clone https://github.com/ttttmr/Caiyun`
-  * or download [the zip file](https://github.com/ttttmr/Caiyun/archive/master.zip) and unzip
+1. download `crx` file and unzip
 2. enable chrome extension developer mode
 3. load unpacked extension
+4. select the dir
+
+## Firefox
+
+Download `ipx` file from [releases](https://github.com/ttttmr/Caiyun/releases) to install
