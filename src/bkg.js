@@ -260,19 +260,21 @@
       (t.cyxyCollectEvent = t.setupVolcengineBackgroundListener = void 0),
       (t.setupVolcengineBackgroundListener = () => {
         browser.runtime.onMessage.addListener((e) => {
+          return;
           if (e && "VolcengineCollectEvent" === e.type)
             return (
               window.cyxyCollectEvent.apply(window, e.args), Promise.resolve()
             );
         });
       }),
-      (t.cyxyCollectEvent = (...e) =>
-        window.cyxyCollectEvent
-          ? window.cyxyCollectEvent.apply(window, e)
-          : browser.runtime.sendMessage({
-              type: "VolcengineCollectEvent",
-              args: e,
-            }));
+      (t.cyxyCollectEvent = (...e) => {});
+      // (t.cyxyCollectEvent = (...e) =>
+      //   window.cyxyCollectEvent
+      //     ? window.cyxyCollectEvent.apply(window, e)
+      //     : browser.runtime.sendMessage({
+      //         type: "VolcengineCollectEvent",
+      //         args: e,
+      //       }));
   },
   function (e, t) {
     var r;
@@ -4541,7 +4543,7 @@
               e.id == T &&
               e.url != R &&
               ((R = e.url), browser.tabs.update(T, { url: R }));
-          });
+          }).catch(e=>{console.log(e)});
       }),
         browser.webNavigation.onBeforeNavigate.addListener(function (e) {
           e.id == T && _ && O(() => {});
